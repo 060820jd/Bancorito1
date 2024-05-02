@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra de Videojuegos</title>
+    <style>
+        body {
+            background-color: #d9ffd9; /* Fondo de color verde claro */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        #menu {
+            background-color: #f0f0f0; /* Menú de color gris claro */
+            padding: 10px;
+            text-align: center; /* Centrar el texto dentro del menú */
+        }
+        #menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        #menu ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        #menu ul li a {
+            text-decoration: none;
+            color: black;
+        }
+        #menu ul li a:hover {
+            color: darkgray;
+        }
+        .content {
+            padding: 20px;
+            text-align: center; /* Centrar el texto dentro del contenido */
+        }
+    </style>
+</head>
+<body>
+    <div id="menu">
+        <ul>
+            <li><a href="#informacion">Información</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#sesion">Iniciar Sesión</a></li>
+        </ul>
+    </div>
+    <div class="content" id="informacion">
+        <h1>Compra de Videojuegos</h1>
+        <p>Bienvenido a nuestra tienda en línea de videojuegos. Encuentra tus juegos favoritos y disfruta de la mejor experiencia de compra.</p>
+        <!-- Aquí puedes agregar más información sobre la tienda -->
+    </div>
+    <div class="content" id="contacto">
+        <h2>Contacto</h2>
+        <p>Para cualquier consulta, no dudes en contactarnos:</p>
+        <ul>
+            <li>Teléfono: 123-456-789</li>
+            <li>Correo electrónico: info@compravideojuegos.com</li>
+            <li>Dirección: Calle Principal #123</li>
+        </ul>
+    </div>
+    <div class="content" id="sesion">
+        <h2>Iniciar Sesión</h2>
+        <form id="loginForm">
+            <label for="usuario">Usuario:</label>
+            <input type="text" id="usuario" name="usuario"><br><br>
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" id="contrasena" name="contrasena"><br><br>
+            <input type="button" value="Iniciar Sesión" onclick="guardarInformacion()">
+        </form>
+    </div>
+    <script>
+        function guardarInformacion() {
+            var usuario = document.getElementById("usuario").value;
+            var contrasena = document.getElementById("contrasena").value;
+            // Simulación de guardado de información en el navegador
+            localStorage.setItem("usuario", usuario);
+            localStorage.setItem("contrasena", contrasena);
+            alert("Información de inicio de sesión guardada localmente.");
+        }
+    </script>
+</body>
+</html>

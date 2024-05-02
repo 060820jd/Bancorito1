@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Películas Gratis</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+
+
+
+<script>
+function search(interestelar) {
+  // Obtiene el valor ingresado en el campo de búsqueda
+  var query = document.getElementById('searchInput').value.trim();
+  
+  // Realiza alguna lógica de búsqueda (aquí puedes conectarlo a tu API o realizar cualquier operación de búsqueda)
+  
+  // Simulación de resultados de búsqueda para este ejemplo
+  var results = ['Pelicula 1', 'Pelicula 2', 'Pelicula 3'];
+  
+  // Muestra los resultados en la página
+  displayResults(results);
+}
+
+function displayResults(results) {
+  var resultsList = document.getElementById('results');
+  
+  // Limpia los resultados anteriores
+  resultsList.innerHTML = '';
+  
+  // Muestra cada resultado como un elemento de lista
+  results.forEach(function(result) {
+    var li = document.createElement('li');
+    li.textContent = result;
+    resultsList.appendChild(li);
+  });
+}
+</script>
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      display: flex;
+    }
+
+    .elemento {
+      flex: 1;
+      padding: 20px;
+      border: 1px solid #ccc;
+      margin: 5px;
+      text-align: center;
+    }
+  </style>
+<body>
+  <header>
+    <h1>Bienvenido a Películas Gratis</h1>
+    <form id="searchForm" onsubmit="return false;">
+      <input type="text" id="searchInput" placeholder="Buscar película...">
+      <button onclick="search()">Buscar</button>
+    </form>
+    
+    <ul id="results"></ul>
+  </header>
+
+  <div id="login-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <form id="login-form">
+        <label for="age">Edad:</label>
+        <input type="number" id="age" required>
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" required>
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" required>
+        <button type="submit">Iniciar Sesión</button>
+      </form>
+    </div>
+  </div>
+
+  <nav>
+    <ul>
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#">Buscar</a></li>
+      <li><a href="#">Contacto</a></li>
+      <div class="tooltip-container">
+        <span class="tooltip" onmouseover="showTooltip(event)" onmouseout="hideTooltip()">¡Pasa el rato aquí!</span>
+        <div id="tooltip-text" class="tooltip-text">Lo mejor de lo mejor.</div>
+      </div>
+      
+    </ul>
+  </nav>
+
+  <main>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="script.js"></script>
+</head>
+<body>
+  
+
+   <div class="single_column">
+    <section id="movie-list">
+      <!-- Aquí puedes incluir la información de las películas -->
+      
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Información</title>
+      <script src="script.js" defer></script> <!-- Incluimos el archivo de script.js -->
+      </head>
+      <body>
+      
+      <!-- Aquí está la imagen a la que le daremos clic -->
+      
+      
+      </body>
+      </html>
+      
+      <h2>Kung fu panda</h2>
+      <img src="imagenes/pandoso.jpeg" alt="Imagen" onclick="abrirVentanaEmergente()">
+
+<div id="ventanaEmergente" class="ventana-emergente" onclick="cerrarVentanaEmergente()">
+<div class="contenido" onclick="event.stopPropagation(1);">
+  <span class="cerrar" onclick="cerrarVentanaEmergente(2)">&times;</span>
+<div id="informacion" style="display: left;">
+  <h2>Sinopsis</h2>
+  <p>Kung Fu Panda es una película de animación producida por DreamWorks Animation que sigue la historia de Po, un panda torpe y soñador que trabaja en la tienda de fideos de su padre adoptivo. Sin embargo, su vida cambia drásticamente cuando es elegido por accidente como el legendario Guerrero Dragón destinado a proteger el Valle de la Paz del malvado Tai Lung. A pesar de su falta de habilidad y experiencia en artes marciales, Po es entrenado por el maestro Shifu y los legendarios Cinco Furiosos para cumplir con su destino y aprender el verdadero significado del kung fu. A lo largo de su viaje, Po enfrenta desafíos internos y externos mientras lucha por aceptar quién es y descubrir su verdadero potencial. La película combina comedia, acción y corazón, y transmite mensajes de autoaceptación, determinación y perseverancia.</p>
+        
+        
+      </div>
+    </div>
+  </div>
+</class>
+    </section>
+  </main>
+  <main>
+    <div class="movie">
+    <div display="footer"></div>
+    <section id="fila-container">
+      <!-- Aquí puedes incluir la información de las películas -->
+      
+
+        <h2>Titanic</h2>
+        <img src="imagenes/Titanic.jpg" alt="Imagen" onclick="abrirVentanaEmergente()">
+
+<div id="ventanaEmergente" class="ventana-emergente" onclick="cerrarVentanaEmergente()">
+  <div class="contenido" onclick="event.stopPropagation(1);">
+    <span class="cerrar" onclick="cerrarVentanaEmergente(2)">&times;</span>
+<div id="informacion" style="display: right;">
+  <h2>Sinopsis</h2>
+  <p>"Titanic" es una película épica dirigida por James Cameron que narra la trágica historia del hundimiento del famoso transatlántico RMS Titanic durante su viaje inaugural en 1912. La trama sigue a Jack Dawson, un joven artista sin recursos, y Rose DeWitt Bukater, una joven de clase alta atrapada en un matrimonio sin amor, quienes se encuentran y se enamoran a bordo del Titanic. A medida que su romance florece, enfrentan la desaprobación de la madre controladora de Rose y el arrogante prometido de ella, mientras el barco se acerca a su destino fatídico. El amor entre Jack y Rose se desarrolla en medio de la opulencia del lujoso trasatlántico, pero su felicidad se ve amenazada por la inminente tragedia. Cuando el Titanic choca contra un iceberg y comienza a hundirse, Jack y Rose luchan por sobrevivir mientras el barco se sumerge en las gélidas aguas del Atlántico Norte. "Titanic" es una historia épica de amor, sacrificio y tragedia que cautivó al público de todo el mundo..</p>
+</div>
+  <!-- Aquí se mostrará la información al hacer clic en la imagen -->
+  
+
+<script src="script.js"></script>
+        
+        <p>Sinopsis de la película.</p>
+        <p>
+          </p>
+        <p>Duración: 160 minutos</p>
+        <p>Fecha de lanzamiento: 25/04/2004</p>
+      </div>
+    </div>
+</div>
+</div>
+
+</class>
+    </section>
+  </main>
+  <main>
+    <div class="movie">
+    <div class="column">
+    <section id="movie-list">
+      <!-- Aquí puedes incluir la información de las películas -->
+      <div class="movie">
+        <h2>interestelar</h2>
+      <img src="imagenes/interestellar.jpg" alt="Imagen" onclick="abrirVentanaEmergente()">
+
+<div id="ventanaEmergente" class="ventana-emergente" onclick="cerrarVentanaEmergente()">
+<div class="contenido" onclick="event.stopPropagation(1);">
+  <span class="cerrar" onclick="cerrarVentanaEmergente(2)">&times;</span>
+<div id="informacion" style="display: right;">
+  <p>Ambientada en un futuro distópico donde la humanidad está luchando por sobrevivir, ya que la Tierra se está volviendo inhabitable por el polvo que está arrasando con todo, cuenta la historia de un grupo de astronautas que viajan a través de un agujero de gusano cerca de Saturno en busca de un nuevo hogar para la humanidad.</p><p>Duracion:190 minutos</p>Fecha de publicación:6 de nov. de 2014<p></p>
+    
+    </section>
+  </main>
+  <main>
+    <div class="container">
+    <div class="column">
+    <section id="movie-list">
+      <!-- Aquí puedes incluir la información de las películas -->
+      <div class="movie">
+        <h2>Kung fu panda</h2>
+      <img src="imagenes/darko.jpg" alt="Imagen" onclick="abrirVentanaEmergente()">
+
+<div id="ventanaEmergente" class="ventana-emergente" onclick="cerrarVentanaEmergente()">
+<div class="contenido" onclick="event.stopPropagation(1);">
+  <span class="cerrar" onclick="cerrarVentanaEmergente(2)">&times;</span>
+<div id="informacion" style="display: right">
+  <h2>Sinopsis</h2>
+  <p>Kung Fu Panda es una película de animación </p>
+        <p>Duración: 90 minutos</p>
+        <p>Fecha de lanzamiento: 16/08/2007</p>
+      </div>
+    </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Contacto:</p>
+    <button id="contact-btn">Mostrar Contactos</button>
+    <div id="contact-info" style="display: none;">
+      <p>Número telefónico: 320-984-2024</p>
+      <p>Correo electrónico: ejemplo@peliculasgratis.com</p>
+      <p>Dirección: Dirección de la empresa física</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
